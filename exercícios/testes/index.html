@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <p>Vamos trabalhar um pouco com as mídias em HTML.</p>
+    <h2>Imagens dinâmicas</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Foto grande">
+    </picture>
+    <p>Tente abrir esse site em dispositivos difentes ou mudar o tamanho da janela.</p>
+    <h2>Áudios</h2>
+    <p>Escute o áudio abaixo. Foi utilizada a tag &ltaudio&gt.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta arquivos de áudio .mp3</p>
+    </audio>
+</body>
+</html>
