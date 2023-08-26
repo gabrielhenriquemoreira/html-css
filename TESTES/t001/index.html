@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+    <style>
+
+        div.quadrado {
+            background-color: lightgray;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+
+        div#q3 {
+            background-image: url(imagens/pattern003.png);
+        }
+
+        div#q1:hover {
+            background-color: blue;
+        }
+
+        div#q2:hover {
+            background-image: linear-gradient(to top, yellow, orange);
+        }
+
+        div#q3:hover {
+            background-image: url(imagens/pattern001.png);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aprecie três formas básicas de preencher uma caixa em HTML.</h1>
+    <p>Nesse exercício, utilizaremos três &lt;div&gt; para demonstrar esse processo.</p>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
