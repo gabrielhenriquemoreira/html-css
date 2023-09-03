@@ -6,6 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+:root {
+    --font1: Permanent Marker, Arial, Helvetica, sans-serif;
+    --font2: Indie Flower, cursive;
+}
+
 
 * {
     margin: 0px;
@@ -15,6 +20,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header {
@@ -22,8 +28,8 @@ header {
 }
 
 header > h1 {
-    font-family: Permanent Marker, sans-serif;
-    font-size: 4em;
+    font-family: var(--font1);
+    font-size: 10vw;
     text-align: center;
     color: white;
     padding: 50px 1px 50px 1px;
@@ -32,7 +38,8 @@ header > h1 {
 
 header > p {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
+    font-size: 22px;
     text-align: center;
     padding-bottom: 50px;
     margin-top: -30px;
@@ -52,15 +59,17 @@ section.imagem > p {
     padding: 30px;
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.258);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.223);
 }
 
 section {
-    font-family: Indie Flower, Arial, Helvetica, sans-serif;
+    font-family: var(--font2);
     font-weight: bolder;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-size: 4vw;
 }
 
 section.normal {
@@ -69,6 +78,7 @@ section.normal {
 }
 
 section.imagem{
+    
     background-color: rgb(51, 51, 51);
     color: white;
 }
