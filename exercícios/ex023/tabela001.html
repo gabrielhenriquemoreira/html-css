@@ -11,41 +11,41 @@
 
         table {
             width: 400px;
-            border: 3px solid red;
+            height: 400px;
             border-collapse: collapse;
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: middle;
         }
 
-        tr.linha {
-            background-color: gray;
+        .numero {
+            text-align: right;
         }
 
-        td.dado {
-            background-color: yellow;
-        }
+        /*Essa configuração que fiz da class .numero serve para exibir todos os dados que são números alinhados à direita. O Excel, por padrão, já faz isso quando selecionamos a opção número para uma célula. Assim, nas CSS, devemos configurar manulamnete!*/
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
-        <tr class="linha">
+        <tr>
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
         <tr>
-            <td class="dado">A2</td>
+            <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A3</td>
-            <td class="dado">B3</td>
-            <td>C3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr>
             <td>A4</td>
