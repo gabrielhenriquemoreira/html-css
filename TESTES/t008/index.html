@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do aluno v 1.0.0</title>
+    <style>
+        body {
+            position: relative;
+            height: 98vh;
+        }
+
+        table {
+            position: absolute;
+            border: 1px black solid;
+            border-collapse: collapse;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(185, 180, 180);
+        }
+
+        th, tfoot {
+            background-color: rgb(139, 132, 132);
+        }
+
+        td, th, caption {
+            border: 1px black solid;
+            padding: 5px;
+        }
+
+        caption {
+            background-color: rgb(54, 52, 52);
+            color: white;
+        }
+
+        .number {
+            text-align: right;
+        }
+        .sit {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>NOTAS DE FULANO BELTRANO</caption>
+        <thead>
+            <tr>
+                <th scope="col">Matéria</th>
+                <th scope="col">Notas</th>
+                <th scope="col">Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matemática</td>
+                <td class="number">10.00</td>
+                <td class="sit">Aprovado</td>
+            </tr>
+            <tr>
+                <td>Português</td>
+                <td class="number">8.7</td>
+                <td class="sit">Aprovado</td>
+            </tr>
+            <tr>
+                <td>Educação Física</td>
+                <td class="number">3.4</td>
+                <td class="sit">Reprovado</td>
+            </tr>
+            <tr>
+                <td>Artes</td>
+                <td class="number">7.00</td>
+                <td class="sit">Aprovado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Situação Geral</th>
+                <td colspan="2" class="sit">Aprovado</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        alert('Olá, aluno! Tudo bem com você, meu caro?');
+    </script>
+</body>
+</html>
