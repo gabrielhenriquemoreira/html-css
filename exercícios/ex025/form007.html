@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected> --- ESCOLHA --- </option>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+            </select>
+        </p>
+
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lsprof">
+            <datalist id="lsprof">
+                <optgroup label="W">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </optgroup>
+                <option value="PRO">Professor</option>
+                <option value="FAR">Farmaceutico</option>
+                <option value="QUI">Químico</option>
+                <option value="VET">Veterinário</option>
+                <option value="MED">Médico</option>
+                <option value="EST">Estudante</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR TUDO">
+        </p>
+    </form>
+</body>
+</html>
