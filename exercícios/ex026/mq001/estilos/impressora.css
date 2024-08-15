@@ -1,29 +1,22 @@
 @charset "UTF-8";
 
-/* Estilo para impressoras */
+/*Estilos para impressora*/
 
 * {
     margin: 10px;
-    padding: 10px
+    padding: 10px;
 }
 
 html {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
     line-height: 1.5em;
-    text-align: justify;
 }
 
 menu {
     display: none;
 }
 
-main {
-    width: 100%;
-}
-
-article::after{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.5em;
-    content: 'Esse artigo foi impresso pelo site do cursoemvideo.com';
+article::after {
+    content: 'Impresso com Calopsita Zeca';
 }
